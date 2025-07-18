@@ -1,32 +1,73 @@
 <p align="center">
-  <img src="public/assets/Logo.png"  height="128">
-  <h2 align="center"><a href="https://aj7.pages.dev"> ajseven.me </a></h2>
-  <p align="center">Personal Portfolio<p>
-  <p align="center">
-   <a href='#'><img src=https://img.shields.io/badge/Maintained%3F-yes-green.svg></img><a/>
-  </p>
+  <img src="public/assets/logo.png" height="120" alt="Logo" />
 </p>
 
-## Development
+<h1 align="center">My Portfolio</h1>
+<p align="center">
+  <a href="https://aj7.pages.dev">Ahmed Emad</a> | <a href="https://github.com/AhmedEmad-21/My-Portfolio">GitHub Repo</a>
+</p>
 
-Clone the repository, install the dependencies and start the application
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
+</p>
+
+---
+
+## 🚀 About
+
+This is a modern, responsive personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS. It showcases my projects, skills, and contact information in a clean and interactive way.
+
+## ✨ Features
+
+- Responsive design for all devices
+- Animated hero section
+- Projects showcase with live demos
+- Downloadable CV
+- Contact form
+- Smooth navigation and transitions
+
+## 🛠️ Built With
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## 📦 Getting Started
+
+Clone the repository, install dependencies, and start the development server:
 
 ```bash
-git clone git@github.com:Aj-Seven/aj-seven.me.git
-cd ajseven.me
+git clone https://github.com/AhmedEmad-21/My-Portfolio.git
+cd My-Portfolio
 npm install
-npm start
+npm run dev
+```
 
-# For Build and serving static pages
+### Build for Production
+
+```bash
 npm run build
-npm -g install serve
-serve build
+npm install -g serve
+serve dist
 ```
 
-**Note:** use the `depth` parameter to reduce the clone size and speed up the clone.
+## 📁 Project Structure
 
-```sh
-git clone --depth=1 https://github.com/Aj-Seven/ajseven.me.git
-```
+- `src/` - Main source code
+- `public/` - Static assets (images, CV, etc.)
+- `src/components/` - Reusable UI components
+- `src/pages/` - Main pages (Home, About, Projects, etc.)
+- `src/sections/` - Page sections (Hero, etc.)
 
-<a href="https://www.buymeacoffee.com/aj.seven" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
+## 🙋‍♂️ Contact
+
+- **GitHub:** [AhmedEmad-21](https://github.com/AhmedEmad-21)
+- **Email:** [ahmedand3509@gmail.com](mailto:ahmedand3509@gmail.com)
+
+---
+
+<p align="center">
+  <i>Thank you for visiting my portfolio!</i>
+</p>
