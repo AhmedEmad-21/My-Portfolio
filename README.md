@@ -4,14 +4,8 @@
 
 <h1 align="center">My Portfolio</h1>
 <p align="center">
-  <a href="https://aj7.pages.dev">Ahmed Emad</a> | <a href="https://github.com/AhmedEmad-21/My-Portfolio">GitHub Repo</a>
+  <a href="">Ahmed Emad</a> | <a href="https://github.com/AhmedEmad-21/My-Portfolio">GitHub Repo</a>
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained" />
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
-</p>
-
 ---
 
 ## 🚀 About
