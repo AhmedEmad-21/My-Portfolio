@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full px-4 backdrop-blur-sm rounded-xl p-6 sm:p-8 text-center text-foreground"
+      className="w-full px-4 backdrop-blur-sm rounded-xl p-6 sm:p-8 text-center text-foreground mb-12"
     >
       {/* Section Heading */}
       <motion.h2

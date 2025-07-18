@@ -4,7 +4,7 @@ import { skillsSections } from "../data/userData";
 
 const Skills = () => {
   return (
-    <section className="w-full min-h-screen py-12 px-4 flex flex-col items-center text-foreground">
+    <section className="w-full min-h-screen py-12 px-4 flex flex-col items-center text-foreground mb-12">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -11,7 +11,7 @@ import WebsiteDemoCard from "../components/WebsiteDemoCard";
 const Projects = () => {
 
   return (
-    <section className="w-full px-4 backdrop-blur-sm rounded-xl p-4 sm:p-8 text-center text-foreground">
+    <section className="w-full px-4 backdrop-blur-sm rounded-xl p-4 sm:p-8 text-center text-foreground mb-12">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
