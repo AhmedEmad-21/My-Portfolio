@@ -4,7 +4,7 @@
 
 <h1 align="center">My Portfolio</h1>
 <p align="center">
-  <a href="">Ahmed Emad</a> | <a href="https://github.com/AhmedEmad-21/My-Portfolio">GitHub Repo</a>
+  <a href="https://ahmed-emad.vercel.app/">Ahmed Emad</a> | <a href="https://github.com/AhmedEmad-21/My-Portfolio">GitHub Repo</a>
 </p>
 ---
 
@@ -57,11 +57,16 @@ serve dist
 
 ## 🙋‍♂️ Contact
 
-- **GitHub:** [AhmedEmad-21](https://github.com/AhmedEmad-21)
 - **Email:** [ahmedand3509@gmail.com](mailto:ahmedand3509@gmail.com)
 
 ---
 
+## 🌐 Live Demo
+
+[View the live portfolio here](https://ahmed-emad.vercel.app/)
+
 <p align="center">
   <i>Thank you for visiting my portfolio!</i>
 </p>
+
+
