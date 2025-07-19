@@ -1,15 +1,14 @@
 "use client";
 
-import React from "react";
-import { useState } from "react";
+import React, { memo, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import clsx from "clsx";
 import { projectData } from "../data/userData";
 import WebsiteDemoCard from "../components/WebsiteDemoCard";
 
-const Projects = () => {
-
+const Projects = memo(() => {
+  const projectsMemo = useMemo(() => projectData, []);
   return (
     <section className="w-full px-4 backdrop-blur-sm rounded-xl p-4 sm:p-8 text-center text-foreground mb-12">
       <motion.h2
@@ -32,7 +31,7 @@ const Projects = () => {
 
       {/* Projects Grid */}
       <div className="grid gap-4 md:grid-cols-2 max-w-5xl mx-auto">
-        {projectData.map((project, index) => (
+        {projectsMemo.map((project, index) => (
           <motion.div
             key={project.name}
             initial={{ opacity: 0, y: 20 }}
@@ -94,6 +93,7 @@ const Projects = () => {
       </div>
     </section>
   );
-};
+});
+
 
 export default Projects;

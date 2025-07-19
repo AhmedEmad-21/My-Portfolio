@@ -1,4 +1,5 @@
-const GlobalBackground = () => {
+import React from "react";
+const GlobalBackground = React.memo(() => {
   return (
     <div className="fixed inset-0 z-10 overflow-hidden pointer-events-none">
       {/* Dot Pattern */}
@@ -33,6 +34,6 @@ const GlobalBackground = () => {
       <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob animation-delay-2000 z-0 bottom-[-100px] right-[-100px]" />
     </div>
   );
-};
+});
 
 export default GlobalBackground;

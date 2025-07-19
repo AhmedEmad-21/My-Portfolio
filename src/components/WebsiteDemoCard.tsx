@@ -1,4 +1,9 @@
-const WebsiteDemoCard = ({ demoUrl }) => {
+import React from "react";
+type WebsiteDemoCardProps = {
+  demoUrl?: string;
+};
+
+const WebsiteDemoCard: React.FC<WebsiteDemoCardProps> = React.memo(({ demoUrl }) => {
   const handleClick = () => {
     if (demoUrl) {
       window.open(demoUrl, "_blank");
@@ -26,6 +31,6 @@ const WebsiteDemoCard = ({ demoUrl }) => {
       )}
     </div>
   );
-};
+});
 
 export default WebsiteDemoCard;

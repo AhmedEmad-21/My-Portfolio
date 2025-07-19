@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Sun, Moon, Code2, Github } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
-const Navbar = () => {
+const Navbar = React.memo(() => {
   const [darkMode, setDarkMode] = useState(false);
 
   // Load theme on mount
@@ -66,6 +66,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+});
 
 export default Navbar;

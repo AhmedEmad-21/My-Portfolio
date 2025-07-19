@@ -1,8 +1,9 @@
-import React from "react";
+import React, { memo, useMemo } from "react";
 import { motion } from "framer-motion";
 import { skillsSections } from "../data/userData";
 
-const Skills = () => {
+const Skills = memo(() => {
+  const skillsMemo = useMemo(() => skillsSections, []);
   return (
     <section className="w-full min-h-screen py-12 px-4 flex flex-col items-center text-foreground mb-12">
       <motion.h2
@@ -24,7 +25,7 @@ const Skills = () => {
       </motion.p>
 
       <div className="w-full max-w-6xl flex flex-col gap-12">
-        {skillsSections.map((section, idx) => (
+        {skillsMemo.map((section, idx) => (
           <motion.div
             key={section.title}
             initial={{ opacity: 0, y: 40 }}
@@ -61,6 +62,7 @@ const Skills = () => {
       </div>
     </section>
   );
-};
+});
+
 
 export default Skills;

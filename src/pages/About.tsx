@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { memo, useMemo } from "react";
 import { motion } from "framer-motion";
 import { facts } from "../data/userData";
 
-const About = () => {
+const About = memo(() => {
+  const factsMemo = useMemo(() => facts, []);
   return (
     <section
       id="about"
@@ -74,7 +75,7 @@ const About = () => {
         transition={{ delay: 0.25, duration: 0.6 }}
         className="flex flex-wrap max-w-2xl mx-auto justify-left gap-2 mb-4"
       >
-        {facts.map((fact, i) => (
+        {factsMemo.map((fact, i) => (
           <motion.div
             key={i}
             whileHover={{ scale: 1.05 }}
@@ -86,6 +87,6 @@ const About = () => {
       </motion.div>
     </section>
   );
-};
+});
 
 export default About;

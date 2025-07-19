@@ -1,8 +1,9 @@
-import React from "react";
+import React, { memo, useMemo } from "react";
 import { motion } from "framer-motion";
 import { contactItems } from "../data/userData";
 
-const Contact = () => {
+const Contact = memo(() => {
+  const contactMemo = useMemo(() => contactItems, []);
   return (
     <section className="w-full px-4 py-10 text-center text-foreground">
       <motion.div
@@ -19,7 +20,7 @@ const Contact = () => {
         </p>
 
         <div className="space-y-5 text-left text-sm sm:text-base">
-          {contactItems.map(
+          {contactMemo.map(
             ({ icon: Icon, label, value, href, color }, index) => (
               <motion.div
                 key={index}
@@ -49,6 +50,7 @@ const Contact = () => {
       </motion.div>
     </section>
   );
-};
+});
+
 
 export default Contact;

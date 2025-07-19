@@ -10,11 +10,13 @@ import {
   //Feather,
 } from "lucide-react";
 
-import About from "../pages/About";
-import Projects from "../pages/Projects";
-import Skills from "../pages/Skills";
-import Contact from "../pages/Contact";
-import Home from "../pages/Home";
+import React, { Suspense, lazy } from "react";
+
+const About = lazy(() => import("../pages/About"));
+const Projects = lazy(() => import("../pages/Projects"));
+const Skills = lazy(() => import("../pages/Skills"));
+const Contact = lazy(() => import("../pages/Contact"));
+const Home = lazy(() => import("../pages/Home"));
 //import Neofetch from "../pages/Fetch";
 
 const sections = {
@@ -85,6 +87,7 @@ const BottomNavbar = () => {
     dragX.set(0);
   };
 
+
   const CurrentComponent = sections[navItems[currentIndex].name];
 
   return (
@@ -92,7 +95,9 @@ const BottomNavbar = () => {
       {/* Main Page Content */}
       <div className="absolute inset-x-0 flex flex-col text-center z-10 rounded-t-lg bg-glass">
         <div className="py-10 mb-12 max-h-dvh overflow-y-auto z-0">
-          {CurrentComponent}
+          <Suspense fallback={<></>}>
+            {CurrentComponent}
+          </Suspense>
         </div>
       </div>
 

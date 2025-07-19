@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import {
@@ -47,7 +48,7 @@ const icons = {
   Fetch: <Feather />,
 };
 
-const DiscMenu = () => {
+const DiscMenu = React.memo(() => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const dragX = useMotionValue(0);
   const rotation = useTransform(dragX, [-100, 100], [-30, 30]);
@@ -125,6 +126,6 @@ const DiscMenu = () => {
       </div>
     </div>
   );
-};
+});
 
 export default DiscMenu;
