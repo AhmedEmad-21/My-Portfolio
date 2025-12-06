@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 type WebsiteDemoCardProps = {
   demoUrl?: string;
+  zoom?: number;
 };
 
-const WebsiteDemoCard: React.FC<WebsiteDemoCardProps> = React.memo(({ demoUrl }) => {
+const WebsiteDemoCard: React.FC<WebsiteDemoCardProps> = React.memo(({ demoUrl, zoom = 1 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -39,6 +40,7 @@ const WebsiteDemoCard: React.FC<WebsiteDemoCardProps> = React.memo(({ demoUrl })
           src={demoUrl}
           loading="lazy"
           className="absolute inset-0 w-full h-full pointer-events-none filter grayscale brightness-40"
+          style={{ transform: `scale(${zoom})`, transformOrigin: 'top left', width: `${100 / zoom}%`, height: `${100 / zoom}%` }}
           title="Website Preview"
         />
       ) : (

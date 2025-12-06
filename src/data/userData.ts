@@ -160,7 +160,7 @@ export const projectData = [
     description: "Full-featured Back-End Management System for a psychological clinic. Features include client booking without registration, secure doctor dashboard, automatic appointment scheduling (online/offline), and complete CRUD operations for managing branches, client files, and session status.",
     tech: ["Node.js", "Express.js", "Layered Architecture", "MongoDB Atlas", "Mongoose", "JWT", "Helmet", "Multer", "AJV"],
     live: "https://clinic-system-hazel.vercel.app/",
-    github: "https://github.com/AhmedEmad-21/clinic-system",
+    zoom: 0.75,
   },
   {
     name: "ASMA Kitchens",
@@ -173,7 +173,7 @@ export const projectData = [
     name: "My Portfolio",
     description: "Modern, responsive personal portfolio website showcasing projects, skills, and contact information in a clean and interactive way.",
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    live: "https://ahmed-emad-portfolio.vercel.app/",
+    live: "https://ahmed-emad.vercel.app/",
     github: "https://github.com/AhmedEmad-21/My-Portfolio-main",
   },
   {

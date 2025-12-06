@@ -81,7 +81,7 @@ const Projects = memo(() => {
                   </a>
                 </div>
               ) : project.live ? (
-                <WebsiteDemoCard demoUrl={project.live} />
+                <WebsiteDemoCard demoUrl={project.live} zoom={project.zoom} />
               ) : (
                 <div className="text-center text-sm text-muted-foreground">
                   No preview available
