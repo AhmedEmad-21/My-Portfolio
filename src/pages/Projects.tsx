@@ -65,10 +65,10 @@ const Projects = memo(() => {
                   <Github size={16} /> GitHub
                 </a>
               )}
-              {project.src && project.linkedin ? (
+              {project.src ? (
                 <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-sm mx-auto cursor-pointer hover:shadow-md transition">
                   <a
-                    href={project.linkedin}
+                    href={project.live || project.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full h-full"
@@ -81,7 +81,7 @@ const Projects = memo(() => {
                   </a>
                 </div>
               ) : project.live ? (
-                <WebsiteDemoCard demoUrl={project.live} zoom={project.zoom} />
+                <WebsiteDemoCard demoUrl={project.live} />
               ) : (
                 <div className="text-center text-sm text-muted-foreground">
                   No preview available

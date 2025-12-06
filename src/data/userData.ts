@@ -159,8 +159,8 @@ export const projectData = [
     name: "Clinic Management System",
     description: "Full-featured Back-End Management System for a psychological clinic. Features include client booking without registration, secure doctor dashboard, automatic appointment scheduling (online/offline), and complete CRUD operations for managing branches, client files, and session status.",
     tech: ["Node.js", "Express.js", "Layered Architecture", "MongoDB Atlas", "Mongoose", "JWT", "Helmet", "Multer", "AJV"],
-    live: "https://clinic-system-hazel.vercel.app/",
-    zoom: 0.75,
+    live: "https://clinic-system-hazel.vercel.app",
+    src: "/assets/Clinic-System-API.png",
   },
   {
     name: "ASMA Kitchens",
