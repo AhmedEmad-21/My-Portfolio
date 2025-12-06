@@ -34,11 +34,11 @@ const Hero = () => {
         >
           <TypeAnimation
             sequence={[
-              "Aspiring Full Stack Developer",
+              "Back-End Engineer",
+              2000,
+              "Node.js Developer",
               2000,
               "Tech Explorer",
-              2000,
-              "Software Engineer",
               2000,
             ]}
             wrapper="span"

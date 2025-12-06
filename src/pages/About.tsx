@@ -28,9 +28,9 @@ const About = memo(() => {
         transition={{ delay: 0.1, duration: 0.6 }}
         className="mb-8"
       >
-        <h3 className="text-2xl font-semibold mb-2 text-primary">PROFILE</h3>
+        <h3 className="text-2xl font-semibold mb-2 text-primary">PROFESSIONAL SUMMARY</h3>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-          Front-End Engineer experienced in building scalable, high-performance web applications using React.js, Next.js, and TypeScript. Skilled in modern UI/UX design, RESTful API integration, responsive design, and web accessibility. Committed to writing clean, maintainable code and continuously learning emerging technologies.
+          Node.js Developer focused on building scalable and high-performance server-side applications. Experienced in architecting RESTful APIs, database management (SQL/NoSQL), and deploying robust services. Utilizes strong foundational skills in JavaScript, Next.js, and TypeScript to deliver comprehensive full-stack solutions. Committed to writing clean, maintainable code and continuously learning emerging technologies.
         </p>
       </motion.div>
 

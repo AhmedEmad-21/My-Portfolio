@@ -88,7 +88,7 @@ const BottomNavbar = () => {
   };
 
 
-  const CurrentComponent = sections[navItems[currentIndex].name];
+  const CurrentComponent = sections[navItems[currentIndex].name as keyof typeof sections];
 
   return (
     <div className="w-screen h-dvh bg-background overflow-hidden">

@@ -26,6 +26,7 @@ import {
   Layout,
   BarChart2,
   FileText,
+  Phone,
 } from "lucide-react";
 
 export const fetchData = [
@@ -43,58 +44,75 @@ export const fetchData = [
 
 export const skillsSections = [
   {
-    title: "Front-End Development",
+    title: "Back-End Development",
+    icon: Server,
+    skills: [
+      { name: "Node.js", icon: Server },
+      { name: "Express.js", icon: Server },
+      { name: "NestJS", icon: Server },
+      { name: "RESTful APIs", icon: Cloud },
+      { name: "Microservices", icon: Component },
+      { name: "JWT Authentication", icon: Settings2 },
+      { name: "Middleware", icon: Layers },
+      { name: "Security (Helmet, Rate Limiting)", icon: Activity },
+    ],
+  },
+  {
+    title: "Databases & Data Modeling",
+    icon: Database,
+    skills: [
+      { name: "MongoDB", icon: Database },
+      { name: "MongoDB Atlas", icon: Cloud },
+      { name: "PostgreSQL", icon: Database },
+      { name: "SQL Server", icon: Database },
+      { name: "Mongoose", icon: Database },
+      { name: "Data Modeling (ERD)", icon: BarChart2 },
+    ],
+  },
+  {
+    title: "Architecture & Design Patterns",
+    icon: Layers,
+    skills: [
+      { name: "Layered Architecture", icon: Layers },
+      { name: "MVC Pattern", icon: Settings2 },
+      { name: "Design Patterns", icon: Braces },
+      { name: "Authentication & Authorization", icon: Activity },
+    ],
+  },
+  {
+    title: "Front-End Basics",
     icon: Layout,
     skills: [
       { name: "HTML", icon: Code },
       { name: "CSS", icon: Braces },
       { name: "Bootstrap", icon: Layers },
       { name: "Tailwind CSS", icon: Paintbrush },
-      { name: "JavaScript (ES6+)", icon: Code },
+      { name: "JavaScript", icon: Code },
       { name: "TypeScript", icon: Type },
+      { name: "React.js (Components, Hooks)", icon: Component },
+      { name: "Next.js", icon: Link2Icon },
+    ],
+  },
+  {
+    title: "Tools & Version Control",
+    icon: GitBranch,
+    skills: [
       { name: "Git", icon: GitBranch },
       { name: "GitHub", icon: Github },
-      { name: "DOM Manipulation", icon: Braces },
-      { name: "Event Handling", icon: Zap },
-      { name: "Async/Await", icon: RefreshCw },
-      { name: "Fetch API", icon: Cloud },
-    ],
-  },
-  {
-    title: "Frameworks & Libraries",
-    icon: Component,
-    skills: [
-      { name: "React.js (Components, Hooks)", icon: Component },
-      { name: "Next.js (SSR, SSG, ISR, API Routes)", icon: Link2Icon },
-      { name: "Node.js", icon: Server },
-    ],
-  },
-  {
-    title: "State Management",
-    icon: Settings2,
-    skills: [
-      { name: "Context API", icon: Users },
-      { name: "Redux", icon: RefreshCw },
-      { name: "Redux Toolkit", icon: Settings2 },
-    ],
-  },
-  {
-    title: "Advanced Web Development",
-    icon: BarChart2,
-    skills: [
-      { name: "Performance Optimization", icon: Activity },
-      { name: "Web Accessibility", icon: Accessibility },
-      { name: "Responsive Design", icon: MonitorSmartphone },
-      { name: "Styled Components", icon: Braces },
+      { name: "Vercel Deployment", icon: Cloud },
+      { name: "AJV Validation", icon: Activity },
+      { name: "Multer", icon: FileText },
     ],
   },
 ];
 
 export const facts = [
-  "Student",
-  "Passion for tech",
-  "Learner",
-  "Aspiring Full Stack Developer",
+  "Back-End Engineer",
+  "Node.js Developer",
+  "Full-Stack Developer",
+  "Giza, Egypt",
+  "Continuous Learner",
+  "Open-Source Contributor",
 ];
 
 export const timeline = [
@@ -106,6 +124,13 @@ export const timeline = [
 ];
 
 export const contactItems = [
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+20 1015815854",
+    href: "tel:+201015815854",
+    color: "text-green-500",
+  },
   {
     icon: Mail,
     label: "Email",
@@ -130,28 +155,34 @@ export const contactItems = [
 ];
 
 export const projectData = [
-    {
+  {
     name: "Clinic Management System",
-    description: "Delivered a full-featured Back-End Management System for a psychological clinic, designed to handle complete client and clinic operations.",
-    tech: ["Node.js", "Express.js (Layered Architecture)", "MongoDB Atlas", "Mongoose", "JWT", "Helmet", "Multer", "AJV"],
-    live: "https://clinic-system-hazel.vercel.app/", 
+    description: "Full-featured Back-End Management System for a psychological clinic. Features include client booking without registration, secure doctor dashboard, automatic appointment scheduling (online/offline), and complete CRUD operations for managing branches, client files, and session status.",
+    tech: ["Node.js", "Express.js", "Layered Architecture", "MongoDB Atlas", "Mongoose", "JWT", "Helmet", "Multer", "AJV"],
+    live: "https://clinic-system-hazel.vercel.app/",
+    github: "https://github.com/AhmedEmad-21/clinic-system",
   },
   {
-    name: "ASMA Project",
-    description: "Delivered a modern, performant portfolio website for a kitchen design company (ASMA Kitchens).",
-    tech: ["NextJS", "React(Hooks)", "TypeScript", "TailwindCSS", "ESlint"],
-    live: "https://asma-project.vercel.app/",
+    name: "ASMA Kitchens",
+    description: "Modern, performant portfolio website for a kitchen design company. Built from the ground up with a professional stack focusing on clean code, responsiveness, and utilizing the Next.js App Router.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "ESLint", "React Hooks"],
+    live: "https://asma-kitchens.vercel.app/",
     github: "https://github.com/AhmedEmad-21/ASMA-Project",
-    // src: "/assets/asma-demo.png",
-    // linkedin: "https://www.linkedin.com/in/example/",
   },
   {
-    name: "Search Engine",
-    description: "Co-developed a search engine capable of indexing and searching over 150,000 websites. The engine supports multi-keyword queries in both Arabic and English and uses a ranking algorithm to deliver relevant results.",
-    tech: ["NextJS", "React(Hooks)", "TypeScript", "Fetche API"],
+    name: "My Portfolio",
+    description: "Modern, responsive personal portfolio website showcasing projects, skills, and contact information in a clean and interactive way.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    live: "https://ahmed-emad-portfolio.vercel.app/",
+    github: "https://github.com/AhmedEmad-21/My-Portfolio-main",
+  },
+  {
+    name: "Bilingual Search Engine",
+    description: "Search engine capable of indexing and searching over 150,000 websites. Supports multi-keyword queries in both Arabic and English with a ranking algorithm for relevant results.",
+    tech: ["Web Scraping", "Inverted Indexing", "PageRank Algorithm", "Database Management"],
     github: "https://github.com/AhmedEmad-21/Search-Engine",
-    src: "/assets/search-engine-demo.png", 
-    linkedin: "https://www.linkedin.com/posts/ahmed-emad21_searchengine-webscraping-informationretrieval-activity-7327823476583469056-lGW-?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAEpb55QBltbGjFTxnr5RJPwUsVgUaC-FiI0&utm_campaign=whatsapp",
+    src: "/assets/search-engine-demo.png",
+    linkedin: "https://www.linkedin.com/posts/ahmed-emad21_searchengine-webscraping-informationretrieval-activity-7327823476583469056-lGW-?utm_source=social_share_send&utm_medium=android_app",
   },
   {
     name: "Stopwatch",
